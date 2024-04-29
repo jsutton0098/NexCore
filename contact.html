@@ -1,0 +1,93 @@
+<!--
+    Student Name: James Sutton
+    File Name: template.html
+    Class: CIT-155
+    Date: 3/8/2024
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/styles.css">
+        <title>NexCore: Template</title>
+        <meta charset="utf-8">
+        <meta name="description" content="NexCore is a community driven server dedicated to making your experience unique">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+        <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+    </head>
+
+    <body>
+        <header>
+            <h1>
+                <center>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><h1>&nbsp; &nbsp;<img src="images/NexCore.png" height="80" width="290"></h1></a>
+                </center>
+            </h1>
+        </header>
+    
+        <nav>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="index.html">Home</a> &nbsp;&nbsp;&nbsp;&nbsp; <!-- NBSP SPACERS WILL NEED TO BE ADDED BEFORE THE HREF TO INDENT THE NAV ELEMENT LATER-->
+                 <a href="rules.html">Rules</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                 <a href="server_map.html">Live Map</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                 <a href="contact.html">Contact Us</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                 <a href="https://discord.gg/8a5HYATUVh" taget="_blank">Discord</a> &nbsp;&nbsp;&nbsp;&nbsp;
+                 <a href="CHANGE_ME_LATER">Store</a> &nbsp;&nbsp;&nbsp;&nbsp; <!-- LINK WILL NEED TO BE ADDED BEFORE TEMPLATE CAN BE USED -->
+                 <a href="vote.html">Vote</a></p>
+         </nav>
+
+<!-- Main area for the website, NO TOUCHY UNLESS YOU HAD COFFEE BRUH -->
+<main>
+    <div id="form">
+        <h2>Complete the form below and one of our moderators will be with you shortly!</h2>
+        <form class="form-grid"><!-- Start Form-->
+            <fieldset>
+                <legend>Player Information</legend>
+                <label for="username">Minecraft Username:</label>
+                <input type="text" name="username" id="username">
+            </fieldset>
+            &nbsp;
+            <fieldset>
+                <legend>Minecraft Edition</legend>
+                <label for="java"><input type="radio" name="edition" id="java" value="Java Edition">Java Edition</label>
+                <label for="bedrock"><input type="radio" name="edition" id="bedrock" value="Bedrock Edition">Bedrock Edition</label>
+            </fieldset>
+            &nbsp;
+            <fieldset>
+                <legend>Player Requests</legend>
+                <label for="compensation"><input type="checkbox" name="request" id="compensation" value="Compensation Request">Compensation Request</label>
+                <label for="bug"><input type="checkbox" name="request" id="bug" value="Bug Reports">Bug Reports</label>
+            </fieldset>
+            &nbsp;
+            <fieldset>
+                <legend>Item Details</legend>
+                <label for="itemtype">Type of Item:</label>
+                <select id="itemtype" name="itemtype">
+                    <option value="Vanilla Items">Vanilla Items</option>
+                    <option value="Custom Items">Custom Items</option>
+                    <option value="Virtual Items">Virtual Items</option>
+                    <option value="Other Items">Other Items</option>
+                </select>
+            </fieldset>
+            &nbsp;
+            <fieldset>
+                <legend>Details</legend>
+                <p>Please provide details about your request:</p>
+                <textarea id="details" name="details" rows="4" cols="50"></textarea>
+            </fieldset>
+            &nbsp;
+            <input type="submit" id="submit" value="Submit" class="btn">
+        </form>
+    </div>
+</main>
+
+        <footer>
+            <audio id="background_music" autoplay>
+                <source src="/media/background_music1.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+        </footer>
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
