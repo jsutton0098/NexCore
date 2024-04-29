@@ -1,0 +1,333 @@
+/* 
+    Student Name: James Sutton
+    File Name: styles.css
+    Class: CIT-155
+    Date: 3/8/2024
+*/
+
+/* ================================================================================================= */
+/*                                                                                                   */
+/*                                  BASIC STYLE STUFFS FOR WEBPAGE                                   */
+/*                                                                                                   */
+/* ================================================================================================= */
+
+body, header, nav, main, footer, img, h1, ul, article, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+img {
+    max-inline-size: 100%;
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    font-size: 1.5em;
+    color: #be73ff;
+    text-decoration: none;
+}
+
+header h1 {
+    font-family: 'Tahoma', serif;
+    font-size:0em;
+    padding-block-start:15px;
+}
+
+nav {
+    background-color: rgba(121, 5, 245, 0.25);
+    inline-size: 100%;
+    font-size: 1.6em;
+}
+
+nav a {
+  text-decoration: none;
+  color: lightblue;
+}
+
+nav a:hover {
+  color: plum;
+}
+
+nav p {
+  font-size: 1.09em;
+  text-decoration: none;
+  font-size: 1.09em;
+}
+  
+nav li {
+    display: inline-block;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+    color: #9da09e;
+  }
+
+footer a {
+  text-decoration: none;
+  color: #a7a8a7;
+}
+
+/* ================================================================================================= */
+/*                                                                                                   */
+/*                               OTHER WEBPAGE ELEMENTS GO UNDER HERE                                */
+/*                                                                                                   */
+/* ================================================================================================= */
+
+main {
+    padding: 2%;
+    overflow: auto;
+    font-family: 'Tohoma', 'sans-serif';
+}
+
+main p {
+    font-size: 1.25em;
+}
+
+#connection {
+    text-align: end;
+    display: block;
+    color: white;
+    padding-inline-end: 10%;
+    padding: 0px 60px;
+    line-height: 8px;
+}
+
+#parrot {
+  position: relative;
+  inset-block-end: 40px;
+  inset-inline-start: 1754px;
+  inline-size:70px;
+}
+
+#main-info {
+  display: block;
+  color: white;
+  padding-inline-start: 5%;
+  text-decoration: none;
+}
+
+#main-info h1 {
+  color: #b303ff;
+  font-family: 'Tohoma', 'san-serif';
+  line-height: 2px;
+}
+
+#main-info p {
+  font-style: italic;
+  font-size: 1.1em;
+  padding: 0% 0.5% 2.5%;
+  color: #9da09e;
+}
+
+#main-info a {
+  text-decoration: none;
+}
+
+#RulesNotice p {
+  color: #9da09e;
+  font-style: italic;
+  text-decoration: underline;
+  padding-bottom: 70px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  color: pink;
+  text-decoration: none;
+  padding-left: 50px;
+}
+
+#GeneralRules {
+  text-decoration: underline; 
+  font-size: 1.6em;
+  padding-bottom: 20px;
+  padding-left: 100px;
+}
+
+#NetherRules {
+  text-decoration: underline; 
+  font-size: 1.6em;
+  padding-bottom: 20px;
+  padding-left: 160px;
+}
+
+#EndRules {
+  text-decoration: underline; 
+  font-size: 1.6em;
+  padding-bottom: 20px;
+  padding-left: 210px;
+}
+
+#RuleList ol {
+  color: white;
+  text-decoration: none;
+  font-style: italic;
+  padding-left: 60px;
+}
+
+#RulesFooter p {
+  font-style: italic;
+  font-size: 1.5em;
+  color: #9da09e;
+}
+
+#AllowedClients {
+  text-decoration: underline; 
+  font-size: 1.6em;
+  padding-bottom: 20px;
+  padding-left: 100px;
+}
+
+#ResourceList ul{
+  text-decoration: none; 
+  font-size: 1.6em;
+  padding-bottom: 80px;
+  padding-left: 225px;
+}
+
+#InstallMods {
+  text-decoration: underline; 
+  font-size: 1.6em;
+  padding-bottom: 20px;
+  padding-left: 390px;
+}
+
+#InstallOptifine {
+  text-decoration: underline; 
+  font-size: 1.6em;
+  padding-bottom: 20px;
+  padding-left: 390px;
+}
+
+#FabricInstall {
+  position: relative;
+  inset-block-end: -46px;
+  inset-inline-start: -1230px;
+  inline-size:70px;
+  display: block;
+}
+
+#OptifineInstall {
+  position: relative;
+  inset-block-end: 230px;
+  inset-inline-start: 1020px;
+  inline-size:70px;
+  display: block;
+}
+
+#form {
+  border: 2px solid #d8b3e0; /* Light purple border */
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+/* Minecraft Edition options */
+label[for="java"] {
+  color: limegreen;
+}
+
+label[for="bedrock"] {
+  color: rgb(6, 255, 6);
+}
+
+/* Player Requests options */
+label[for="compensation"] {
+  color: gold; 
+}
+
+label[for="bug"] {
+  color: limegreen;
+}
+
+/* Dropdown menu */
+#itemtype {
+  background-color: #c3d7e3;
+}
+
+#announcement h3 {
+  color: lightblue;
+  font-size: 1.6em;
+  text-decoration: none;
+  padding-left: 50px;
+}
+
+#announcement p {
+  color: white;
+  font-size: 1.2em;
+  font-style: italic;
+  padding-bottom: 86px;
+  padding-left: 70px;
+}
+
+/* ================================================================================================= */
+/*                                                                                                   */
+/*                               STYLES FOR THE "FORUM" UNDER HERE                                   */
+/*                                                                                                   */
+/* ================================================================================================= */
+
+#announcements h1, #updates h1, #resources h1 {
+  color: pink;
+  text-decoration: underline;
+  font-size: 2.5em;
+}
+
+#announcements p, #updates p, #resources p {
+  color: gray;
+  font-style: italic;
+}
+
+/* ================================================================================================= */
+/*                                                                                                   */
+/*                                   VIEWPORT SETTINGS GO UNDER HERE                                 */
+/*                                                                                                   */
+/* ================================================================================================= */
+/* Media Query For Tablet Viewport */
+@media screen and (min-width: 550px), print {
+  /*Tablet Viewport: Show tab-desk class, hide mobile class */
+  .tab-desk, #menu-links {
+   display: block;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('/images/background.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color: pink;
+    text-decoration: none;
+    padding-left: auto;
+  }
+
+    @media print {
+      body {
+        background-color: #fff;
+        color: #000;
+      }
+  }
+}
